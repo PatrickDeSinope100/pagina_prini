@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto E.C.O.</title>
+    <style>
+        /* Importar fuente minimalista y limpia */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #2c3e50;
+            /* AQUÍ COLOCAS TU IMAGEN DE FONDO */
+            background-image: url('img/imagen_fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+
+        /* Capa superpuesta (sin el fondo oscuro) */
+        .overlay {
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor principal semi-transparente */
+        .container {
+            max-width: 800px;
+            background: rgba(245, 255, 245, 0.85); /* Verde muy muy claro y transparente */
+            backdrop-filter: blur(8px); /* Efecto de cristal */
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        h1 {
+            color: #2e7d32; /* Verde fuerte */
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #4caf50;
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #388e3c;
+            border-bottom: 2px solid #a5d6a7;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        p, li {
+            font-size: 1.05em;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo del botón de Figma */
+        .figma-btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .figma-btn {
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .figma-btn:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+        }
+
+        /* Responsivo para celulares */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="container">
+            <h1>Proyecto E.C.O.</h1>
+            <div class="subtitle">Enlace de Colección Organizada</div>
+
+            <p><strong>EcoNexo</strong> es una plataforma digital diseñada para transformar la gestión de residuos sólidos urbanos, conectando directamente a la ciudadanía con los recolectores de base para lograr un reciclaje eficiente y ordenado.</p>
+
+            <h2>La Problemática</h2>
+            <ul>
+                <li><strong>Rutas a ciegas:</strong> Los recolectores invierten horas y combustible recorriendo calles sin saber dónde hay material valioso.</li>
+                <li><strong>Desmotivación ciudadana:</strong> El esfuerzo de separar en casa se pierde cuando el camión tradicional mezcla todos los residuos en la misma tolva.</li>
+                <li><strong>Material contaminado:</strong> La falta de recolección oportuna contamina materiales como el PET o el cartón, reduciendo drásticamente su valor comercial.</li>
+            </ul>
+
+            <h2>Nuestra Solución</h2>
+            <ul>
+                <li><strong>Optimización Logística:</strong> Un sistema de rutas inteligentes para que los recolectores ahorren tiempo y aumenten sus ingresos.</li>
+                <li><strong>Recompensas y Gamificación:</strong> Un modelo de incentivos para reconocer y premiar a los ciudadanos más constantes en la separación de su basura.</li>
+                <li><strong>Trabajo Digno:</strong> Empoderar y formalizar la valiosa labor de los recolectores de base.</li>
+            </ul>
+
+            <h2>Datos que Respaldan el Proyecto</h2>
+            <p>Tras realizar encuestas en nuestras zonas piloto, descubrimos que:</p>
+            <ul>
+                <li>El <strong>100%</strong> de los usuarios cuenta con un smartphone e internet, garantizando la viabilidad de la app.</li>
+                <li>Al <strong>88.9%</strong> le gustaría recibir notificaciones en tiempo real cuando el recolector esté cerca, eliminando la incertidumbre.</li>
+                <li>El <strong>66.7%</strong> está dispuesto a lavar sus envases antes de entregarlos, lo que asegura material de alta calidad para la economía circular.</li>
+            </ul>
+
+            <div class="figma-btn-container">
+                <a href="https://www.figma.com/design/h3dcPJGKPo7K1f844qIojy/Proyecto-Integrador-II?node-id=0-1&t=j5Z1a54Ia26O3ZD2-1" target="_blank" class="figma-btn">
+                    Ver Prototipo Interactivo en Figma
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
